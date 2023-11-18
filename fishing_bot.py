@@ -15,15 +15,14 @@ import time
 """
 Global Variables
 """
-checking_keys = False
 bot_is_paused = False
+checking_keys = False
 main_loop = True
 bot_is_fishing = False
 inventory_is_set = False
 hook_button_is_set = False
 fishing_spot_is_set = False
 pause_menu_is_set = False
-
 
 """
 Functions
@@ -66,8 +65,8 @@ def setup_bot():
     global fishing_spot_is_set
     global hook_button_is_set
     global fishing_spot
-    global checking_keys
-    print("Setup the bot, please don't move the mouse and make sure FATE window is visible !")
+    global set_hook_button
+    print("Setting up the bot, please don't move the mouse and make sure FATE window is visible !")
     time.sleep(3.0)
 
     # Close the pause menu if open
@@ -103,7 +102,6 @@ def setup_bot():
     while hook_button_is_set == False:
         try:
             set_hook_button = pyautogui.locateOnScreen(os.getcwd() + '\\assets\\set_hook_button.PNG', grayscale=True)
-            pydirectinput.moveTo(set_hook_button.left, set_hook_button.top)
             hook_button_is_set = True
             print("Hook button set !")
         except pyautogui.ImageNotFoundException:
@@ -121,48 +119,11 @@ def setup_bot():
     
     # Start to check the keyboard inputs
     checking_keys = True
-    print("Bot is ready !\n[alt+y] Pause/Unpause the bot\n[alt+esc] Shutdown the bot\n")
-
-def check_keyboard_inputs():
-    """
-    Check the keyboard inputs of the user
-    alt+y   --> pause / unpause the bot
-    alt+esc --> shutdown the bot
-    """
-    global checking_keys
-    global main_loop
-    global bot_is_fishing
-    global bot_is_paused
-    
-    while checking_keys == True:
-        
-        # Pause / Unpause the bot
-        if keyboard.is_pressed('alt') and keyboard.is_pressed('y'):
-            bot_is_paused = not bot_is_paused
-            if bot_is_paused == True:
-                print('The bot has been paused !')
-            else:
-                bot_is_fishing = False
-                print('The bot is back to work with the state [Not fishing] !')
-                
-        # Shutdown the bot
-        if keyboard.is_pressed('alt') and keyboard.is_pressed('esc'):
-            main_loop = False
-            bot_is_paused = True
-            checking_keys = False
-            print('The bot goes down, the application will be automatically closed')
-        
-        # Avoid too much checking by sleeping for 0.1 sec
-        time.sleep(0.1)
-
+    print("Bot is ready !")
 
 """
 Bot Logics
 """
-# Setup the keyboard check thread
-keyboard_thread = threading.Thread(target=check_keyboard_inputs)
-keyboard_thread.start()
-
 # Setup the initial bot position
 setup_bot()
 
