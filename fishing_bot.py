@@ -48,7 +48,7 @@ def check_hook():
             bot_is_fishing = True
             
         # Currently fishing, hook up if a hooked fish
-        pyautogui.locateOnScreen(os.getcwd() + '\\assets\\question_mark.PNG', region=[300, 300, 300, 300])
+        pyautogui.locateOnScreen(os.getcwd() + '\\assets\\question_mark_2.PNG', region=[300, 300, 300, 300])
         print('A hooked fish !')
         pydirectinput.click(x=set_hook_button.left, y=set_hook_button.top, clicks=2, interval=0.1)
         time.sleep(5)
