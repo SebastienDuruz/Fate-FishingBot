@@ -3,5 +3,5 @@
 
 ## Dependancies
 '''
-pip install keyboard pyautogui pydirectinput
+pip install keyboard pyautogui pydirectinput opencv-python
 '''
