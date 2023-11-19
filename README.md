@@ -43,4 +43,4 @@ The values are **subtracted** from the default position.
 5. When finished, return to the terminal and press `Ctrl-C` to shut down the bot.
 
 ## Exemple
-[![Video exemple](https://i.ytimg.com/an_webp/GJsejfrqCrg/mqdefault_6s.webp?du=3000&sqp=CLDc6KoG&rs=AOn4CLDlkxULPMeIAab7BDaf4BGKAbVIVQ)](https://www.youtube.com/watch?v=GJsejfrqCrg "FATE - Fishing bot built in Python")
+[![Video exemple](https://i.ytimg.com/an_webp/GJsejfrqCrg/mqdefault_6s.webp?du=3000&sqp=CLDc6KoG&rs=AOn4CLDlkxULPMeIAab7BDaf4BGKAbVIVQ)](https://www.youtube.com/watch?v=GJsejfrqCrg "FATE - Fishing bot built in Python"){:target="_blank"}
