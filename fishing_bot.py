@@ -7,7 +7,6 @@ Libraries
 import pyautogui
 import pydirectinput
 import os
-import keyboard
 import threading
 import time
 import signal
@@ -128,7 +127,6 @@ def setup_bot():
         bot_is_fishing = False
         print("", end="")
     
-    # Start to check the keyboard inputs
     checking_keys = True
     print("Bot is ready !")
 
