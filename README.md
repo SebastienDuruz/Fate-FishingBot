@@ -42,5 +42,5 @@ The values are **subtracted** from the default position.
 4. Execute the bot using Python 3: `python3.exe .\fishing_bot.py`.
 5. When finished, return to the terminal and press `Ctrl-C` to shut down the bot.
 
-## Exemple
-[![Video exemple](https://i.ytimg.com/an_webp/GJsejfrqCrg/mqdefault_6s.webp?du=3000&sqp=CLDc6KoG&rs=AOn4CLDlkxULPMeIAab7BDaf4BGKAbVIVQ){:target="_blank"}](https://www.youtube.com/watch?v=GJsejfrqCrg "FATE - Fishing bot built in Python")
+## Example
+[![Video example](https://i.ytimg.com/an_webp/GJsejfrqCrg/mqdefault_6s.webp?du=3000&sqp=CLDc6KoG&rs=AOn4CLDlkxULPMeIAab7BDaf4BGKAbVIVQ)](https://www.youtube.com/watch?v=GJsejfrqCrg "FATE - Fishing bot built in Python")
